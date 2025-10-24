@@ -1,0 +1,37 @@
+facts:
+  - "Lalitha Sree Damarla is a Full-Stack Developer and AI/ML Engineer"
+  - "Expert in Java, Python, React, and machine learning technologies"
+  - "Built student behavior analysis system using ensemble clustering algorithms"
+  - "Developed PyQt desktop application for interactive data clustering"
+  - "Created AI-powered task manager with natural language processing"
+  - "Built enterprise warehouse management system with Java Spring Boot"
+  - "Experienced with Python ML libraries: Scikit-learn, Pandas, NumPy"
+  - "Proficient in desktop GUI development with PyQt and web development"
+  - "Focuses on AI/ML solutions and full-stack enterprise applications"
+  - "Available for machine learning and full-stack development projects"
+
+projects:
+  student-clustering:
+    description: "ML project using ensemble clustering for student behavior analysis"
+    metrics: "Multiple clustering algorithms, behavioral pattern analysis, data visualization"
+    tech: "Python, Scikit-learn, Pandas, NumPy, Matplotlib"
+  
+  pyqt-clustering:
+    description: "Desktop GUI application for interactive data clustering with PyQt"
+    metrics: "Interactive GUI, real-time clustering, multiple algorithms"
+    tech: "Python, PyQt, Scikit-learn, Matplotlib, Pandas"
+  
+  task-manager-bot:
+    description: "Intelligent task management system with AI chatbot functionality"
+    metrics: "AI-powered assistance, natural language processing, task automation"
+    tech: "Python, Flask, NLP, SQLite, JavaScript"
+  
+  warehouse-system:
+    description: "Enterprise warehouse management system with inventory tracking"
+    metrics: "Inventory optimization, real-time tracking, analytics dashboard"
+    tech: "Java, Spring Boot, React, PostgreSQL, REST API"
+
+contact:
+  - "You can reach Sree via the contact form on this website"
+  - "Available for AI engineering and cloud architecture projects"
+  - "Open to discussing consulting opportunities and collaborations"
