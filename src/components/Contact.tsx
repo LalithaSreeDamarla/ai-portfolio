@@ -54,7 +54,11 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <form className="space-y-6">
+            <form 
+              action={`mailto:${bio.email}?subject=Portfolio Contact&body=Name: [Your Name]%0D%0AEmail: [Your Email]%0D%0AMessage: [Your Message]`}
+              method="get"
+              className="space-y-6"
+            >
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                   Name
@@ -97,6 +101,17 @@ export default function Contact() {
               <button
                 type="submit"
                 className="w-full flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const form = e.currentTarget.closest('form') as HTMLFormElement;
+                  const formData = new FormData(form);
+                  const name = formData.get('name') || 'Not provided';
+                  const email = formData.get('email') || 'Not provided';
+                  const message = formData.get('message') || 'Not provided';
+                  const subject = 'Portfolio Contact from ' + name;
+                  const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+                  window.location.href = `mailto:${bio.email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+                }}
               >
                 <Send className="w-5 h-5 mr-2" />
                 Send Message
